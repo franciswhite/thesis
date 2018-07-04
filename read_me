@@ -1,3 +1,7 @@
+These are owl/rdf ontologies modeling Bernard Bolzano's conceptual universe.
+They were done as a part of Silvan Hungerbuehler's master thesis at the ILLC in Amsterdam.
+
+
 full_uncontroversial: this is what I used in the thesis. a set of uncontroversial concepts 
 from bolzano's mereology and theory of science.
 inconsistent_thesis: this is the purposefully inconistent formalization of bolzano from the thesis.
