@@ -1,0 +1,7 @@
+full_uncontroversial: this is what I used in the thesis. a set of uncontroversial concepts 
+from bolzano's mereology and theory of science.
+inconsistent_thesis: this is the purposefully inconistent formalization of bolzano from the thesis.
+inferred_test: these are the consequences derived from the full_uncontroversial statements.
+slightly_flesh: is an extension of full_uncontroversial with more relations and concepts.
+flawed_test_case: as far as i can remember this was an attempt to build a larger interpretation of 
+bolzano than "inconsistent_thesis" which is also flawed in some ways.
