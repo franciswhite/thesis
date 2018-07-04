@@ -1,0 +1,662 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#belongs_to">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#grounds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#grounds"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has_an_sich_counterpart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has_an_sich_counterpart">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_part_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Adherence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Adherence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Quality"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Real"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Aggregate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Aggregate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#External_Quality"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#An_Sich_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#An_Sich_Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Not_Real"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Ontological_Realm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Linguistic_Realm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Mental_Realm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Appearance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Appearance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Complex_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Complex_Idea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concept">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuition"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuition"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#An_Sich_Realm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concepts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concepts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Conceptual_Propositions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Conceptual_Propositions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concepts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Empirical_Propositions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Empirical_Propositions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concepts"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuitions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concepts"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuitions"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Empirical_Propositions"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Concepts"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuitions"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>This statement is redundant wrt to the first one.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#External_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#External_Quality">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#belongs_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Aggregate"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_part_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#An_Sich_Realm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Ontological_Realm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Internal_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Internal_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Simple_Idea"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Singular_Idea"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#An_Sich_Realm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuitions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Intuitions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Judgment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Judgment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Mental_Realm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has_an_sich_counterpart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Linguistic_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Linguistic_Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Ontological_Realm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Real"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Mental_Realm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Manifold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Manifold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Aggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Mental_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Mental_Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Ontological_Realm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Real"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Not_Consequences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Not_Consequences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Not_Real -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Not_Real">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Real"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Objectless_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Objectless_Idea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Objectual_Idea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Objectual_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Objectual_Idea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Ontological_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Ontological_Realm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#An_Sich_Realm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#grounds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#grounds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>not sure whehter this is a happy formalization</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Pure_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Pure_Object">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Object"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Quality"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Quality">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#belongs_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Real -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Real"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Simple_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Simple_Idea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Simple_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Simple_Object">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#is_composed_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Singular_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Singular_Idea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Objectual_Idea"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Subjective_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Subjective_Idea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Appearance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Mental_Realm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#has_an_sich_counterpart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Substance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Substance">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Pure_Object"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Real"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Sum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Sum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Aggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Symbolic_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Symbolic_Idea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#refers_to"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Idea"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Truths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Truths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#not_a_consequence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#not_a_consequence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Not_Consequences"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#not_a_consequence"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/sh/ontologies/2017/11/untitled-ontology-8#Not_Consequences"/>
+        <rdfs:comment>the existence of this individual in the Not_Consequences class is to encode that there is a Proposition that is not a Consequence</rdfs:comment>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

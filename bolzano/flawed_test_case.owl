@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#"
+     xml:base="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#belongs_to">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_an_sich_counterpart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_an_sich_counterpart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_part_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Adherence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Adherence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Quality"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Aggregate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Aggregate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#An_Sich_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#An_Sich_Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Non_Existing"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Linguistic_Realm"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Mental_Realm"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Appearance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Appearance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Mental_Realm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Common_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Common_Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Complex_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Complex_Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Concept">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Intuition"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Intuition"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#External_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#External_Quality">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Quality"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#belongs_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Aggregate"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_part_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#An_Sich_Realm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Internal_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Internal_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Intuition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Intuition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Idea"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Singular_Idea"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Judgment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Judgment">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_an_sich_counterpart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Appearance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Linguistic_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Linguistic_Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#An_Sich_Realm"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Mental_Realm"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Mental_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Mental_Realm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#An_Sich_Realm"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Linguistic_Realm"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Non_Existing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Non_Existing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Ontological_Realm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Objectless_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Objectless_Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Objectual_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Objectual_Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Ontological_Realm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Ontological_Realm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#An_Sich_Realm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Pure_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Pure_Object">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Quality"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#belongs_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Quality">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#belongs_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Object">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#is_composed_of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Singular_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Singular_Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Subjective_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Subjective_Idea">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_an_sich_counterpart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Appearance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Substance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Substance">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Pure_Object"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Symbolic_Idea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Symbolic_Idea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#refers_to"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Idea"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Real"/>
+        <refers_to rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <refers_to rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel"/>
+        <refers_to rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#squared -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#squared">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <refers_to rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#squared"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_idea1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_idea1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_idea2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_idea2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Common_Idea"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Objectual_Idea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_prop1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_prop1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Object"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_idea1"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#test_idea2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(camel_is_red.)_(Prop) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(camel_is_red.)_(Prop)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel_(idea)"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_(idea)"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red_(idea)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(red_camel) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(red_camel)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Pure_Object"/>
+        <has rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#squared"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(red_camel)_(idea) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(red_camel)_(idea)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Complex_Idea"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel_(idea)"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red_(idea)"/>
+        <refers_to rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(red_camel)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(red_camel_is_squared.)_(Prop) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#(red_camel_is_squared.)_(Prop)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Proposition"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel_(idea)"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_(idea)"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red_(idea)"/>
+        <is_composed_of rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#square_(idea)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel_(idea) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#camel_(idea)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Idea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_(idea) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#has_(idea)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Idea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red_(idea) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#red_(idea)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Idea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#square_(idea) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#square_(idea)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sh/ontologies/2018/3/untitled-ontology-19#Simple_Idea"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
